@@ -85,5 +85,5 @@ Las pruebas verifican las operaciones matemáticas, los casos límite, las valid
 
 ## Autor
 
-- Nombre completo del autor: **Pendiente de confirmar**.
+- Nombre completo del autor: **Carlos Ailton Villca Alcocer**.
 - Usuario de GitHub: `villca06carlos24-a11y`.
