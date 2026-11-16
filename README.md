@@ -1,35 +1,52 @@
-# ampliacion-calculadora
+# Ampliación de la calculadora
 
-Práctica 2- Ampliación de calculadora en Python con Git y GitHub Issues.
+**Práctica 2:** ampliación de una calculadora en Python utilizando Git, GitHub Issues y Markdown.
 
 ## Descripción
 
-Aplicación de consola desarrollada en Python que permite realizar operaciones aritméticas y matemáticas, validar los datos ingresados y consultar o limpiar el historial de operaciones durante la ejecución.
+Aplicación de consola desarrollada en Python que permite realizar operaciones matemáticas, validar los datos ingresados y consultar o limpiar el historial de operaciones durante la ejecución.
 
-## Operaciones y estado
+## Funcionalidades y estado
 
-| Operación | Descripción | Estado |
-|---|---|---|
-| Suma | Suma dos números. | Implementada |
-| Resta | Resta dos números. | Implementada |
-| Multiplicación | Multiplica dos números. | Implementada |
-| División | Divide dos números y evita la división entre cero. | Implementada |
-| Módulo | Obtiene el residuo de una división y valida el divisor. | Implementada |
-| Potencia | Eleva una base a un exponente positivo, negativo o cero. | Implementada |
-| Raíz cuadrada | Calcula la raíz cuadrada y rechaza números negativos. | Implementada |
-| Porcentaje | Calcula un porcentaje de una cantidad. | Implementada |
-| Valor absoluto | Devuelve el valor absoluto de un número. | Implementada |
-| Factorial | Calcula el factorial de un entero no negativo. | Implementada |
-| Promedio | Calcula el promedio de varios números. | Implementada |
-| Redondeo | Redondea un número a la cantidad de decimales indicada. | Implementada |
-| Historial | Registra y muestra las operaciones de la sesión. | Implementada |
-| Limpiar historial | Elimina los registros de la sesión. | Implementada |
+| N.º | Funcionalidad | Estado |
+|---:|---|---|
+| 1 | Potencia: elevar una base a un exponente positivo, negativo o cero. | Implementada |
+| 2 | Módulo: obtener el residuo de una división. | Implementada |
+| 3 | Raíz cuadrada: calcular la raíz y rechazar números negativos. | Implementada |
+| 4 | Porcentaje: calcular un porcentaje de una cantidad. | Implementada |
+| 5 | Valor absoluto: obtener el valor absoluto de un número. | Implementada |
+| 6 | Factorial: calcular el factorial de un entero no negativo. | Implementada |
+| 7 | Promedio: calcular el promedio de varios números. | Implementada |
+| 8 | Redondeo: redondear un resultado a los decimales indicados. | Implementada |
+| 9 | Validación de entradas: controlar datos no numéricos y valores no finitos. | Implementada |
+| 10 | División por cero: evitar división y módulo con divisor cero. | Implementada |
+| 11 | Menú: organizar las operaciones en opciones claras. | Implementada |
+| 12 | Repetición: permitir realizar varias operaciones sin reiniciar el programa. | Implementada |
+| Adicional 1 | Historial: almacenar y mostrar las operaciones de la sesión. | Implementada |
+| Adicional 2 | Limpiar historial: borrar los registros de la sesión. | Implementada |
+| Adicional 3 | Documentación: incluir descripción, tabla, instalación y ejemplos. | Implementada |
+| Base | Suma, resta, multiplicación y división. | Implementadas |
+
+## Estructura del proyecto
+
+El proyecto contiene dos archivos Python, respetando el máximo establecido en la práctica:
+
+```text
+ampliacion-calculadora/
+├── README.md
+├── calculadora.py
+└── operaciones.py
+```
+
+- **calculadora.py:** muestra el menú, solicita los datos, valida las entradas, presenta los resultados y controla la repetición y el historial.
+- **operaciones.py:** contiene las funciones matemáticas y realiza los cálculos.
 
 ## Tecnologías utilizadas
 
 - Python 3.10 o superior.
-- Módulo `unittest` de la biblioteca estándar para las pruebas.
-- Git y GitHub para el control de versiones y seguimiento del trabajo.
+- Git para el control de versiones.
+- GitHub para alojar el repositorio y organizar las tareas mediante Issues.
+- Markdown para la documentación.
 
 ## Instalación y ejecución
 
@@ -54,7 +71,7 @@ Aplicación de consola desarrollada en Python que permite realizar operaciones a
 4. Ejecutar la calculadora:
 
    ```bash
-   python main.py
+   python calculadora.py
    ```
 
 No se necesitan instalar dependencias externas.
@@ -73,17 +90,8 @@ Al iniciar el programa se muestra un menú con las operaciones disponibles.
 
 Las entradas no numéricas se vuelven a solicitar. Las operaciones no permitidas, como dividir entre cero o calcular la raíz cuadrada de un número negativo, muestran un mensaje de error sin cerrar la aplicación.
 
-## Ejecución de pruebas
-
-Para ejecutar todas las pruebas unitarias desde la carpeta del proyecto:
-
-```bash
-python -m unittest discover -v
-```
-
-Las pruebas verifican las operaciones matemáticas, los casos límite, las validaciones, el menú, la repetición de operaciones y el historial.
-
 ## Autor
 
-- Nombre completo del autor: **Carlos Ailton Villca Alcocer**.
-- Usuario de GitHub: `villca06carlos24-a11y`.
+**Carlos Ailton Villca Alcocer**
+
+Usuario de GitHub: `villca06carlos24-a11y`
